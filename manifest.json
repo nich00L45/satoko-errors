@@ -1,21 +1,17 @@
 {
-    "name": "Satoko Error Handler",
+    "name": "Satoko Errors",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "permissions": [
       "webRequest",
-      "webNavigation",
-      "scripting"
+      "<all_urls>"
     ],
-    "host_permissions": ["*://*/*"],
     "background": {
-      "service_worker": "background.js"
+      "scripts": ["background.js"]
     },
     "web_accessible_resources": [
-        {
-          "resources": ["*.html", "images/*.png"],
-          "matches": ["<all_urls>"]
-        }
+      "*.html",
+      "images/*.png"
     ],
     "icons": {"48": "images/icon.png"}
   }
