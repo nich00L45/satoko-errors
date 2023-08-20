@@ -17,8 +17,6 @@ This project was originally a Chrome extension, and so far I've only made it hav
 ## How to Install
 As a word of caution, I will again specify that I'm new to making extensions, so use this at your own risk. There's very little code involved, so in theory not much can go wrong, but just figured I'd get that disclaimer out there! Now, if you do want to install this, either clone the git repo to your computer through your method of choice (for those who are familiar with git), or for those less familiar with GitHub, click the green "<> Code" button towards the top right of the page, then select "Download ZIP." Once the .zip file is downloaded, unzip it to a new folder.
 
-Once the project is on your computer, go into Chrome, click on the icon with the vertical ellipses ("..."), then hover over Extensions and click "Manage Extensions" (alternatively, you can just enter `chrome://extensions/` into your search bar to get to the same place).
-
 At the moment, I've only tried adding it as a temporary extension. Since I don't intend for this to be used long-term anyways, I think that should be fine. In order to add a temporary extension to Firefox, enter `about:debugging#/runtime/this-firefox` into your search bar, then click the "Load Temporary Add-on" button and select the file's manifest.json from your file explorer. This should load the extension!
 
 To test it, you can go anywhere you want that might trigger a 4xx error. To trigger a 404, I recommend going somewhere like https://google.com/satoko, which is a page that doesn't exist, and will thus trigger the error. 
